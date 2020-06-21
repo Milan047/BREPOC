@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BREPOC", "BREPOC.csproj", "{77E17918-C742-4EB8-B618-2E400B7EAC7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRETEST", "..\BRETEST\BRETEST.csproj", "{89750930-CC51-41B5-A7B8-7FD41DB7339B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{AADA0485-DFEF-4A20-9BA6-7EB9CEF151F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{77E17918-C742-4EB8-B618-2E400B7EAC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E17918-C742-4EB8-B618-2E400B7EAC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E17918-C742-4EB8-B618-2E400B7EAC7A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89750930-CC51-41B5-A7B8-7FD41DB7339B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89750930-CC51-41B5-A7B8-7FD41DB7339B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89750930-CC51-41B5-A7B8-7FD41DB7339B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89750930-CC51-41B5-A7B8-7FD41DB7339B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AADA0485-DFEF-4A20-9BA6-7EB9CEF151F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADA0485-DFEF-4A20-9BA6-7EB9CEF151F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADA0485-DFEF-4A20-9BA6-7EB9CEF151F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADA0485-DFEF-4A20-9BA6-7EB9CEF151F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
