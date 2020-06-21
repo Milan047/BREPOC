@@ -2,7 +2,7 @@
 
 namespace BREPOC.PaymentStatergies
 {
-    class VideoProductPaymentStrategy : IPaymentStatergy
+     public class VideoProductPaymentStrategy : IPaymentStatergy
     {
         private Product _product = null;
         public VideoProductPaymentStrategy(Product product)

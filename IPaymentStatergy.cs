@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BREPOC
 {
-    interface IPaymentStatergy
+   public interface IPaymentStatergy
     {
         void ProcessPayment();
 

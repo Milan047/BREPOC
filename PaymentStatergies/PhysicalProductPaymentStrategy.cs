@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BREPOC.PaymentStatergies
 {
-    class PhysicalProductPaymentStrategy : IPaymentStatergy
+    public  class PhysicalProductPaymentStrategy : IPaymentStatergy
     {
         private Product _product = null;
         public PhysicalProductPaymentStrategy(Product product)

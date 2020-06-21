@@ -2,7 +2,7 @@
 
 namespace BREPOC.PaymentStatergies
 {
-    class BookProductPaymentStrategy : IPaymentStatergy
+     public class BookProductPaymentStrategy : IPaymentStatergy
     {
         private Product _product = null;
         public BookProductPaymentStrategy(Product product)
@@ -18,7 +18,7 @@ namespace BREPOC.PaymentStatergies
 
         public void ProcessPayment()
         {
-            Console.WriteLine("Applying  BookProductPaymentStrategy  ");
+            Console.WriteLine("Applying BookProductPaymentStrategy  ");
             GenerateCommisionPayment();
             GenerateDupliacteSlip();
         }

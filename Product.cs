@@ -1,6 +1,6 @@
 ﻿namespace BREPOC
 {
-     class Product
+    public class Product
     {
 
         public virtual  string ProductName { get; set; }

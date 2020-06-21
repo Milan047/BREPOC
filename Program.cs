@@ -6,21 +6,26 @@ using System.Threading.Tasks;
 
 namespace BREPOC
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the product type : ");
-            string proudctType = Console.ReadLine();
-            Console.Write("Enter the product name : ");
-            string proudctName = Console.ReadLine();
-            Console.Write("Enter the product cost : ");
-            string cost = Console.ReadLine();
-            decimal productCost = Convert.ToDecimal(cost);
-            var product = new Product { ProductName = proudctName, ProductType = proudctType, ProductCost = productCost };
-            ProductFactory pFactory;
+            //Console.Write("Enter the product type : ");
+            //string proudctType = Console.ReadLine();
+            //Console.Write("Enter the product name : ");
+            //string proudctName = Console.ReadLine();
+            //Console.Write("Enter the product cost : ");
+            //string cost = Console.ReadLine();
+            //decimal productCost = Convert.ToDecimal(cost);
+            // var product = new Product { ProductName = proudctName, ProductType = proudctType, ProductCost = productCost };
+
+        }
+
+        public static IPaymentStatergy GetPaymentLogic(Product product)
+        {
+            ProductFactory pFactory = null;
             //This object creation process will be moved to a DI framework(Unity,AutoFac) in futute
-            switch (proudctType.ToUpper())
+            switch (product.ProductType.ToUpper())
             {
                 case "BOOK":
                     pFactory = new BookProductFactory(product);
@@ -35,7 +40,7 @@ namespace BREPOC
                     pFactory = new MembershipProductFactory(product);
                     break;
                 default:
-                    return;
+                    break;
             }
             Product productC
                 = pFactory.GetProduct();
@@ -44,7 +49,7 @@ namespace BREPOC
                 product.ProductName, product.ProductType, product.ProductCost);
             IPaymentStatergy paymentStrategy = pFactory.GetPaymentStatergy();
             paymentStrategy.ProcessPayment();
-            Console.ReadKey();
+            return paymentStrategy;
 
         }
     }
